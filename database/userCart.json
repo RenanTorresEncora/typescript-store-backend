@@ -1,0 +1,12 @@
+{
+  "userId": 1,
+  "userCart": {
+    "products": [
+      { "productId": 2, "quantity": 1 },
+      { "productId": 1, "quantity": 3 },
+      { "productId": 4, "quantity": 4 }
+    ],
+    "itemsInCart": 8,
+    "totalPrice": 416.11
+  }
+}
