@@ -4,10 +4,15 @@ import { readFile, writeFile } from 'fs/promises';
 const router = express.Router();
 
 // GET
-router.get('/', (req, res) => {
+router.get('/:userId', (req, res) => {
+  const { userId } = req.params;
   readFile('./database/userCart.json').then((data) => {
     const parsedData = JSON.parse(data);
-    res.status(200).json(parsedData.userCart.products);
+    if (parsedData.userId === Number(userId)) {
+      res.status(200).json(parsedData.userCart);
+    } else {
+      res.status(400).json({ success: false, message: `No such user with ID: ${userId}` });
+    }
   });
 });
 
