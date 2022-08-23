@@ -1,0 +1,27 @@
+{
+  "name": "typescript-store-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Back-end server for the TypeScript Store Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenanTorresEncora/typescript-store-backend.git"
+  },
+  "author": "Renan Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenanTorresEncora/typescript-store-backend/issues"
+  },
+  "homepage": "https://github.com/RenanTorresEncora/typescript-store-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
